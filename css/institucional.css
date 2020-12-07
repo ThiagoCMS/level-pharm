@@ -1,0 +1,53 @@
+.container {
+  padding: calc(12px + 2vw);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.display-logo {
+  align-self: center;
+  justify-self: center;
+  max-width: 360px;
+  text-align: center;
+  width: 70%;
+}
+
+section {
+  justify-self: center;
+  margin-top: 32px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 4px;
+}
+
+section p {
+  font-size: calc(1em + .1vw);
+  max-width: 900px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: 450px 450px;
+  }
+
+  .display-logo {
+    grid-column: 1 / span 2;
+    margin-bottom: 32px;
+  }
+
+  .quem-somos {
+    grid-column: 1 / span 2;
+    margin-bottom: 32px;
+  }
+
+  section:nth-of-type(2) {
+    padding-right: 16px;
+  }
+
+  section:nth-of-type(3) {
+    padding-left: 16px;
+  }
+}
