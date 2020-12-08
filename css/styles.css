@@ -3,6 +3,7 @@
   --secondary-color: 255, 255, 255;
   --black: 0, 0, 0;
   --white: 255, 255, 255;
+  --gray: 234, 234, 234;
 }
 
 * {
@@ -84,9 +85,10 @@
 
 .button {
   background-color: rgb(var(--primary-color));
+  border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(var(--black), .4);
-  color: inherit;
+  color: rgb(var(--white));
   display: block;
   padding: 8px;
   text-align: center;
