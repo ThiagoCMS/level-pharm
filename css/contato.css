@@ -3,21 +3,23 @@
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr;
-  padding: calc(12px + 2vw);
+  justify-content: center;
+  padding: calc(12px + 2vh) calc(12px + 2vw);
 }
 
 .container h2 {
-  font-size: 2em;
+  font-size: calc(2em + 1vw);
 }
 
 @media (min-width: 1000px) {
   .container {
     gap: 128px calc(16px + 12vw);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, clamp(400px, 35vw, 500px));
   }
 
   .container h2 {
     grid-column: 1 / span 2;
+    text-align: center;
   }
 }
 
@@ -36,6 +38,7 @@
 .form label {
   display: flex;
   flex-direction: column;
+  font-size: calc(1em + 0.2vw);
   margin-bottom: 12px;
 }
 
@@ -43,7 +46,7 @@
   background-color: rgb(var(--gray));
   border: none;
   border-radius: 2px;
-  height: 24px;
+  height: 28px;
   margin-top: 4px;
   width: 100%;
 }
@@ -58,6 +61,7 @@
 }
 
 .form .submit {
+  font-size: calc(1em + 0.2vw);
   width: calc(100px + 10%);
 }
 

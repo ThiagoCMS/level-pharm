@@ -1,8 +1,8 @@
 .container {
-  padding: calc(12px + 2vw);
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  padding: calc(12px + 2vh) calc(12px + 2vw);
 }
 
 .display-logo {
@@ -19,12 +19,12 @@ section {
 }
 
 section h2 {
-  font-size: 2em;
+  font-size: calc(2em + 1vw);
   margin-bottom: 4px;
 }
 
 section p {
-  font-size: calc(1em + .1vw);
+  font-size: calc(1em + .2vw);
   max-width: 900px;
 }
 
