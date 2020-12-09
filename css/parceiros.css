@@ -29,12 +29,17 @@
   flex-direction: column;
   justify-content: space-between;
   margin: calc(4px + 1vh) calc(4px + 1vw);
+  padding: 12px;
   text-align: center;
   width: calc(300px + 5vw);
 }
 
 .card img {
   width: 70%;
+}
+
+.card:nth-of-type(2) img {
+  margin-top: 8px;
 }
 
 .card h3 {
