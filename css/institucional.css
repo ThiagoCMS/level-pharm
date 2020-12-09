@@ -26,6 +26,7 @@ section h2 {
 section p {
   font-size: calc(1em + .2vw);
   max-width: 900px;
+  text-align: justify;
 }
 
 @media (min-width: 1000px) {
