@@ -17,6 +17,10 @@
   background-color: rgb(var(--primary-color));
   min-height: 70px;
   padding: 0 calc(12px + 2vw);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header-nav {
@@ -47,6 +51,10 @@
 
 .nav-details summary::-webkit-details-marker {
   display: none;
+}
+
+.nav-details i {
+  font-size: 22px;
 }
 
 .nav-details a {
@@ -81,6 +89,11 @@
   .nav-pages {
     display: block;
   }
+}
+
+.fill-header-space {
+  height: 70px;
+  width: 100%;
 }
 
 .button {
