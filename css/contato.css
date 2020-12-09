@@ -84,10 +84,11 @@
   justify-content: space-between;
 }
 
-.social-media img {
-  width: 40px;
+.social-media i {
+  font-size: 40px;
 }
 
-.social-media > img:hover {
+.social-media > i:hover {
+  color: rgba(var(--black), .5);
   cursor: pointer;
 }

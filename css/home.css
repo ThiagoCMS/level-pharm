@@ -73,6 +73,7 @@
 }
 
 .content-social i:hover {
+  color: rgba(var(--white), .5);
   cursor: pointer;
 }
 
